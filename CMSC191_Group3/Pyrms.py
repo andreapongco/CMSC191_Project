@@ -1,4 +1,5 @@
 from pandas import read_csv, DataFrame
+import matplotlib.pyplot as plt
 import re
 from numpy import array
 
@@ -133,8 +134,6 @@ overall_distribution = Pyrms.compute_sample_distribution(names)
 location_distribution = Pyrms.compute_location_distribution(names)
 
 # make a data form out of the dictionaries
-
-
 overall_distribution_df = []
 for i in overall_distribution:
     overall_distribution_df.append(DataFrame(overall_distribution[i], columns=["Length", "Count"]))
@@ -144,7 +143,7 @@ for i in location_distribution:
     for j in location_distribution[i]:
         location_distribution_df.append(DataFrame(location_distribution[i][j], columns=["Length", "Count"]))
 
-overall_distribution_df[0].
+
 
 
 
